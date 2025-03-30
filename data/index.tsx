@@ -1,73 +1,5 @@
-export const navItems = [
-  { name: 'Sobre', link: '#about' },
-  { name: 'Projetos', link: '#projects' },
-  { name: 'Depoimentos', link: '#testimonials' },
-  { name: 'Contato', link: '#contact' },
-];
-
-export const gridItems = [
-  {
-    id: 1,
-    title: 'Eu priorizo a colaboração com os clientes, incentivando uma comunicação aberta. ',
-    description: '',
-    className: 'lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]',
-    imgClassName: '!w-full "h-full',
-    titleClassName: 'justify-end',
-    img: '/b1.svg',
-    spareImg: '',
-  },
-  {
-    id: 2,
-    title: 'Sou muito flexível com a comunicação em diferentes fusos horários.',
-    description: '',
-    className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
-    imgClassName: '',
-    titleClassName: 'justify-start',
-    img: '',
-    spareImg: '',
-  },
-  {
-    id: 3,
-    title: 'As tecnologias que eu utilizo',
-    description: 'Estou sempre buscando melhorar.',
-    className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
-    imgClassName: '',
-    titleClassName: 'justify-center',
-    img: '',
-    spareImg: '',
-  },
-  {
-    id: 4,
-    title: 'Entusiasta de tecnologia com paixão por desenvolvimento.',
-    description: '',
-    className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
-    imgClassName: '',
-    titleClassName: 'justify-start',
-    img: '/grid.svg',
-    spareImg: '/b4.svg',
-  },
-
-  {
-    id: 5,
-    title: 'Atualmente aprendendo e desenvolvendo com Next/React',
-    description: 'Em Direção ao Futuro',
-    className: 'md:col-span-3 md:row-span-2',
-    imgClassName: 'absolute right-0 bottom-0 md:w-96 w-60',
-    titleClassName: 'justify-center md:justify-start lg:justify-center',
-    img: '/b5.svg',
-    spareImg: '/grid.svg',
-  },
-  {
-    id: 6,
-    title: 'Vamos começar um projeto juntos?',
-    description: '',
-    className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
-    imgClassName: '',
-    titleClassName: 'justify-center md:max-w-full max-w-60 text-center',
-    img: '',
-    spareImg: '',
-  },
-];
+import { SiAppwrite, SiFigma, SiNextdotjs, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { FaNodeJs, FaReact, FaVuejs } from 'react-icons/fa';
 
 export const projects = [
   {
@@ -168,17 +100,31 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: '/git.svg',
+    img: '/assets/icons/git.svg',
     link: 'https://github.com/Lxcier',
   },
   {
     id: 2,
-    img: '/inst.svg',
-    link: 'https://www.instagram.com/cier.digital/',
+    img: '/assets/icons/wha.svg',
+    link: 'https://whatsa.me/5511940844167/?t=Ol%C3%A1!%20Encontrei%20seu%20portf%C3%B3lio%20e%20tenho%20interesse%20nos%20seus%20servi%C3%A7os.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es?',
   },
   {
     id: 3,
-    img: '/link.svg',
+    img: '/assets/icons/link.svg',
     link: 'https://www.linkedin.com/in/lucaslucier/',
   },
+];
+
+export const items = [
+  {
+    word: 'NextJs',
+    icon: <SiNextdotjs className="text-gray-800 dark:text-gray-200 w-12 h-12" />,
+  },
+  { word: 'ReactJs', icon: <FaReact className="text-blue-500 w-12 h-12" /> },
+  { word: 'Vue.js', icon: <FaVuejs className="text-green-500 w-12 h-12" /> },
+  { word: 'NodeJS', icon: <FaNodeJs className="text-green-600 w-12 h-12" /> },
+  { word: 'Typescript', icon: <SiTypescript className="text-blue-700 w-12 h-12" /> },
+  { word: 'TailwindCSS', icon: <SiTailwindcss className="text-teal-500 w-12 h-12" /> },
+  { word: 'Appwrite', icon: <SiAppwrite className="text-pink-500 w-12 h-12" /> },
+  { word: 'Figma', icon: <SiFigma className="text-purple-600 w-12 h-12" /> },
 ];
